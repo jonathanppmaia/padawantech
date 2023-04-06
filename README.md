@@ -25,7 +25,7 @@ O Projeto está sendo realizado por (Links Github):
 * [Jonathan Maia](https://github.com/jonathanppmaia)
 
 ___
-###Ferramenta e Tecnologias Utilizadas
+### Ferramenta e Tecnologias Utilizadas
 
 <div style="display:inline_block">
 
@@ -40,7 +40,7 @@ ___
 
 ___
 
-##Sprint - 01 Layout
+### Sprint - 01 Layout
 
 ##### Desenvolvimento :
 
@@ -53,9 +53,6 @@ ___
 * Uso do Github para gestão do projeto.
 * Uso do Discord para comunicação da equipe.
 
-Entrega em 05.04.2023 -  
-
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FkG5x8XurgI3tuNaYNH1yJu%2FPadawan-Tech---Sprint-01%3Fnode-id%3D0%253A1%26t%3D7vbDyQLGHKzTlnJh-1" allowfullscreen></iframe>
-
+Entrega em 05.04.2023 -  [LINK  PROJETO NO FIGMA ](https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FkG5x8XurgI3tuNaYNH1yJu%2FPadawan-Tech---Sprint-01%3Fnode-id%3D0%253A1%26t%3D7vbDyQLGHKzTlnJh-1).
 
 ___
