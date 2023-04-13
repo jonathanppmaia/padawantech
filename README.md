@@ -56,3 +56,30 @@ ___
 Entrega em 05.04.2023 -  [LINK  PROJETO NO FIGMA ](https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FkG5x8XurgI3tuNaYNH1yJu%2FPadawan-Tech---Sprint-01%3Fnode-id%3D0%253A1%26t%3D7vbDyQLGHKzTlnJh-1).
 
 ___
+
+### Sprint - 02 HTML
+
+##### Desenvolvimento :
+
+* Uso apropriado das tags HTML para organização do conteúdo do site;
+
+* Ter pelo menos 5 arquivos HMTL (um para cada layout criado anteriormente);
+
+* Configurar o repositório criado pela equipe de trabalho.‌
+
+##### Organização :
+
+* Uso do Github para gestão do projeto.
+* Uso do Discord para comunicação da equipe.
+
+##### Ao final da Sprint:
+* Projeto com os componentes básicos de um site:
+* Header;
+* Barra de navegação;
+* Formulário;
+* Seções e artigos;
+* Footer.
+
+Entrega em 12.04.2023
+
+___
