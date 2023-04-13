@@ -14,13 +14,10 @@ header {
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 15px 20px;
     background-color: transparent;
     backdrop-filter: blur(2px);
-
- 
-
 }
 
 header img {
@@ -59,7 +56,6 @@ header img {
     margin: 0 5px;
     transition: all .45s ease;
     border-radius: 5px;
-  
 }
 
 .navbar a:hover {
