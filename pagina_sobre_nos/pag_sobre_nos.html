@@ -4,72 +4,185 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/style.css">
     <title>Sobre Nós</title>
 </head>
 <body>
-    <header> 
-        <img src="/pagina_sobre_nos/src/img/Logo.PNG" alt="logo padawan tech">
-        <nav>
-            <ul>
-                <li> <a href=""> Home</li> </a>
-                <li>Sobre Nós</li>
-                <li> <a href=""> Parceiros</li> </a>
-                <li> <a href=""> Desenvolvedores</li> </a>
-                <li> <a href=""> Cadastro</li> </a>
-                <Button> <a href=""> Log in</Button> </a>
-            </ul>            
-        </nav>        
-    </header>
-    <main>
-        <section>
-            <h1>Na Padawan Tech, acreditamos em valores fundamentais que nos orientam em tudo o que fazemos</h1>
-            <h2>Esses valores são:</h2>
-            <p> <strong>Inovação:</strong>estamos sempre buscando novas ideias e soluções para criar tecnologia que transforme a vida das pessoas.</p>
-            <p> <strong>Colaboração: </strong>sabemos que trabalhar em equipe é essencial para alcançar nossos objetivos e, por isso, incentivamos a colaboração em todos os níveis da empresa. </p>
-            <p> <strong>Paixão: </strong> acreditamos que a paixão pelo que fazemos é a chave para o sucesso. Por isso, procuramos contratar pessoas que estejam comprometidas e entusiasmadas com a tecnologia </p>
-            <p> <strong>Responsabilidade:</strong> assumimos a responsabilidade pelo nosso trabalho e pelos impactos que nossas soluções podem ter na sociedade. Trabalhamos de forma ética e responsável em todas as nossas atividades.  </p>
-            <p> <strong>Aprendizado:</strong> estamos sempre buscando aprender e melhorar nossas habilidades, conhecimentos e processos para oferecer soluções cada vez melhores aos nossos clientes e usuários. </p>
-            <p> <strong>Diversidade:</strong> valorizamos e respeitamos a diversidade em todas as suas formas e procuramos criar um ambiente inclusivo para todos os membros da nossa equipe.</p>
-            <p> <strong>Excelência:</strong> buscamos a excelência em tudo o que fazemos, desde a qualidade do código até a experiência do usuário final.</p>
-            <p>Estes são os valores que nos guiam todos os dias, e estamos comprometidos em colocá-los em prática em cada projeto e em cada interação que temos com nossos colegas e clientes. Juntos, estamos construindo uma empresa forte e inovadora, comprometida em criar tecnologia que faça a diferença no mundo."</p>
-        </section>
-        <aside>
-             <h3>Estamos comprometidos em oferecer um método de ensino inovador e eficiente para novos desenvolvedores que desejam se tornar profissionais de tecnologia. Nosso método é baseado em três pilares fundamentais</h3>            
-            <p> <strong>Aprendizado prático:</strong>acreditamos que a melhor forma de aprender a programar é fazendo. Por isso, nosso método de ensino é voltado para a prática, com exercícios e projetos que os alunos devem desenvolver ao longo do curso.</p>
-            <p> <strong>Mentoria: </strong>sabemos que os novos desenvolvedores podem se sentir perdidos em meio a tanta informação. Por isso, oferecemos mentoria personalizada para cada aluno, com profissionais experientes que podem ajudá-los a tirar dúvidas e a superar desafios.</p>
-            <p> <strong>Aprendizado colaborativo:</strong> valorizamos o aprendizado em equipe, pois acreditamos que os alunos podem aprender uns com os outros. Por isso, nosso método de ensino inclui atividades em grupo e a possibilidade de compartilhar conhecimento e experiências entre os alunos.</p>
-            <p> Além disso, nosso método de ensino é atualizado constantemente, com base nas tendências e tecnologias mais recentes do mercado. Desta forma, nossos alunos saem preparados para enfrentar os desafios do mundo real, com habilidades atualizadas e práticas.</p>
-            <p> Estamos comprometidos em oferecer um ambiente de aprendizado dinâmico, eficiente e acolhedor para todos os nossos alunos, independente de sua formação e experiência anterior. Juntos, estamos formando a próxima geração de desenvolvedores que podem transformar o mundo com a tecnologia."</p>            
-        </aside>
-            <img src="/pagina_sobre_nos/src/img/forca_star_wars.jpg" alt="Imagem do Star Wars escrito que a força esteja com você">        
-    </main>
-    <footer>
-        <section>
-        <h2>INFORMAÇÕES</h2>
-        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ex laboriosam nemo libero asperiores delectus magnam? Recusandae nisi quasi quod sunt! Inventore optio itaque possimus aperiam eveniet commodi fuga dolore!</P>
-        <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
-            <li>LinkedIn</li>            
-        </ul>
-        <h2>NAVEGAÇÃO</h2>
-            <ul>
-                <li> <a href=""> Homepage</li> </a>
-                <li> <a href=""> Sobre Nós</li> </a>                
-                <li> <a href=""> Desenvolvedores</li> </a>
-                <li> <a href=""> Projetos</li> </a>                
-            </ul> 
-        <h2>CONTATOS</h2>
-            <ul>
-                <address>Rua das Estrelas, 99</address>
-                <div>hello@padawantech.com</div>
-                <div>Email Adress: <input type="email" name="" id=""> </div>
-                <button type="submit">SUBSCRIBE</button>                
+    <header>
+        <img src="/src/img/logo.svg" alt="logo padawan Tech">  
+            <ul class="navbar">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="sobre.html">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="parceiros.html">Parceiros</a>
+                </li>
+                <li>
+                    <a href="desenvolvedores.html">Desenvolvedores</a>
+                </li>
+                <li id="cad">
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
             </ul>
 
+        <div class="header-btn">
+          <a class="cadastro" href="#">Cadastro</a>
+          <a class="in" href="#">Log In</a>
+          <div class="menu-mobile">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>  
+      </header>
+
+    <main>
+        <h1>Na Padawan Tech, acreditamos em valores fundamentais que nos orientam em tudo o que fazemos</h1>
+        <br>               
+            <div>
+                <h3>Nossos valores são:</h3>
+            </div>
+        <section class="box-valor">
+            <div class="card-valor">
+                <strong>Inovação</strong>
+                <div class="text-values">                    
+                    <p>Estamos sempre buscando novas ideias e soluções para criar tecnologia que transforme a vida das pessoas.</p>
+                </div>
+            </div>
+            <div class="card-valor">
+                <strong>Colaboração</strong>
+                <div class="text-values">
+                    <p>Sabemos que trabalhar em equipe é essencial para alcançar nossos objetivos e, por isso, incentivamos a colaboração em todos os níveis da empresa. </p>
+                </div>
+            </div>        
+            <div class="card-valor">
+                <strong>Paixão</strong>
+                <div class="text-values">
+                    <p>Acreditamos que a paixão pelo que fazemos é a chave para o sucesso. Por isso, procuramos contratar pessoas que estejam comprometidas e entusiasmadas com a tecnologia </p>                
+                </div>
+            </div>
         </section>
-    </footer>
-    
+        <section class="box-valor">            
+            <div class="card-valor">
+                <strong>Responsabilidade</strong>
+                <div class="text-values">
+                    <p>Assumimos a responsabilidade pelo nosso trabalho e pelos impactos que nossas soluções podem ter na sociedade. Trabalhamos de forma ética e responsável em todas as nossas atividades.  </p>
+                </div>
+            </div>
+            <div class="card-valor">
+                <strong>Aprendizado</strong>
+                <div class="text-values">
+                    <p>Estamos sempre buscando aprender e melhorar nossas habilidades, conhecimentos e processos para oferecer soluções cada vez melhores aos nossos clientes e usuários. </p>
+                </div>
+            </div>
+            <div class="card-valor">
+                <strong>Diversidade</strong> 
+                <div class="text-values">
+                    <p>Valorizamos e respeitamos a diversidade em todas as suas formas e procuramos criar um ambiente inclusivo para todos os membros da nossa equipe.</p>
+                </div>
+            </div>
+            <div class="card-valor">
+                <strong>Excelência</strong>
+                <div class="text-values">
+                    <p>Buscamos a excelência em tudo o que fazemos, desde a qualidade do código até a experiência do usuário final.</p>                    
+                </div>
+            </div>
+        </section>
+        <div class="middle-text">
+            <p>Estes são os valores que nos guiam todos os dias, e estamos comprometidos em colocá-los em prática em cada projeto e em cada interação que temos com nossos colegas e clientes. Juntos, estamos construindo uma empresa forte e inovadora, comprometida em criar tecnologia que faça a diferença no mundo."</p>
+        </div>
+    </section>            
+        <h4 id="title-method">
+            Estamos comprometidos em oferecer um método de ensino inovador e eficiente para novos desenvolvedores que desejam se tornar profissionais de tecnologia. Nosso método é baseado em três pilares fundamentais</h4>
+    <section class="box-method">                
+        <div>
+            <strong class="subtext">
+                Aprendizado prático</strong>
+            <p id="texto-aprendizado">
+                Acreditamos que a melhor forma de aprender a programar é fazendo. Por isso, nosso método de ensino é voltado para a prática, com exercícios e projetos que os alunos devem desenvolver ao longo do curso.</p>
+        </div>
+        <div class="Mint">
+            <strong class="subtext">
+                Mentoria</strong>
+                    <p id="texto-Mint">
+                        Sabemos que os novos desenvolvedores podem se sentir perdidos em meio a tanta informação. Por isso, oferecemos mentoria personalizada para cada aluno, com profissionais experientes que podem ajudá-los a tirar dúvidas e a superar desafios.</p>
+                    <div id="darth">
+                        <img src="/pagina_sobre_nos/src/img/forca_star_wars.jpg" alt="Imagem do Star Wars escrito que a força esteja com você">        
+                    </div>
+        </div>
+        <div class="card-method">
+            <strong class="subtext">
+                Aprendizado colaborativo</strong>
+                    <p id="texto-aprendizado">
+                        Valorizamos o aprendizado em equipe, pois acreditamos que os alunos podem aprender uns com os outros. Por isso, nosso método de ensino inclui atividades em grupo e a possibilidade de compartilhar conhecimento e experiências entre os alunos.</p>
+            </div>                    
+        </section><br>        
+            <div class="middle-text">
+                <p>Além disso, nosso método de ensino é atualizado constantemente, com base nas tendências e tecnologias mais recentes do mercado. Desta forma, nossos alunos saem preparados para enfrentar os desafios do mundo real, com habilidades atualizadas e práticas.</p><br>                    
+                <p>Estamos comprometidos em oferecer um ambiente de aprendizado dinâmico, eficiente e acolhedor para todos os nossos alunos, independente de sua formação e experiência anterior. Juntos, estamos formando a próxima geração de desenvolvedores que podem transformar o mundo com a tecnologia.</p>
+            </div>            
+    </main>
+    <footer>
+        <section class="container-footer">
+            <div>
+                <img id="pedemage" src="/src/img/logo.svg" alt="logo padawan Tech">
+                <div class="informacoes">
+                    <h2>INFORMAÇÕES</h2><br>                    
+                    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ex laboriosam nemo libero asperiores delectus magnam?</P><br>                    
+                        <ul id="redesociais">
+                            <a href="https://pt-br.facebook.com/" target="_blank" class="social-img">
+                                <img src="/pagina_sobre_nos/src/img/facebook_original_logo_icon_146526.png" alt=""></a>
+                            <a href="https://twitter.com/" target="_blank" class="social-img">
+                                <img src="/pagina_sobre_nos/src/img/Twitter_icon-icons.com_66803.png" alt=""></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="social-img">
+                                <img src="/pagina_sobre_nos/src/img/instagram-icone-logo.png" alt=""></a>
+                            <a href="https://www.linkedin.com/" target="_blank" class="social-img">
+                                <img src="/pagina_sobre_nos/src/img/linkedin.png" alt=""></a>            
+                        </ul>
+                </div>
+            </div>            
+                <div class="navegacao">
+                    <h2>NAVEGAÇÃO</h2>
+                        <ul><br>                            
+                            <li> <a href="/index.html">
+                                Homepage
+                            </li></a>
+                            <li> <a href="/pagina_sobre_nos/pag_sobre_nos.html">
+                                Sobre Nós
+                            </li> </a>                
+                            <li> <a href="#">
+                                Desenvolvedores
+                            </li> </a>
+                            <li> <a href="#">
+                                Projetos
+                            </li> </a>    
+                        </ul>                         
+                </div>
+                <div class="contatos">
+                    <h2>CONTATOS</h2><br>
+                        <ul>                                               
+                            <address>
+                                Rua das Estrelas, 99
+                            </address>
+                            <p>
+                                hello@padawantech.com
+                            </p><br>
+                            <p>
+                                Email Adress: <input type="email" name="" id="">
+                            </p>
+                            <button id="botao" type="submit">
+                                SUBSCRIBE
+                            </button>                
+                        </ul>
+                </div>
+        </section>
+    </footer>    
 </body>
 </html>
