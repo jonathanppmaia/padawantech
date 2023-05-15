@@ -20,21 +20,6 @@ body {
     color: #FFDD00;
 }
 
-/* h1{
-    font-size: 50px;
-    text-align: center;
-    margin-top: 75px;
-    margin-left: 30px;
-    margin-right: 30px;
-} */
-
-/* h4{
-    text-align: center;
-    font-size: 1rem;
-    font-style: italic;    
-    margin-bottom: 15px;
-} */
-
 .grupo {
     border: 0;
 }
@@ -62,14 +47,10 @@ input, select, textarea, button{
 }
 
 .container {
-    /* min-height: 100vh; */
+   
     width: 99%;
     height: 80vh;
     display: flex;
-    /* flex-direction: row;
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 5%; */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
     
 }
@@ -154,11 +135,7 @@ input, select, textarea, button{
     font-family: 'inter', sans-serif;
     color: #FFDD00;
     margin-left: 7%;
-    /* font-size: 50px;
-    text-align: center;
-    margin-top: 75px;
-    margin-left: 30px;
-    margin-right: 30px; */
+   
     
 }
 
@@ -235,50 +212,3 @@ input, select, textarea, button{
     background-color: rgb(2, 65, 7);    
 }
 
-
-/* .logohero img{
-    display: block;
-    max-width: 100%;
-
-} */
-
-
-/* .container .text {
-    display: block;
-    font-size: 2.5vw;
-    font-weight: 700;
-    color: #fff;
-}
-
-.btnhero {
-    margin-top: 20px;
-}
-
-#cadastrobtn {
-
-    background: #FFDD00;
-    color: black;
-    border: 2px solid transparent;
-    border-radius: 20px;
-    transition: all .50s ease;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 10px 15px;
-    margin-top: 10px;
-    max-width: 100%;    
-}
-
-
-.container #right {
-    width: 50%;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: right;
-
-}
-
-.right img{
-    max-width: 100%;
-} */
