@@ -1,199 +1,253 @@
 <! DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-</head>
-<body>
-    <header> 
-        <img src="/src/img/Logo.PNG" alt="logo padawan tech">
-        <nav>
-            <ul>
-                <li> <a href=""> Home</li> </a>
-                <li> <a href=""> Sobre Nós</li> </a>
-                <li> <a href=""> Parceiros</li> </a>
-                <li> <a href=""> Desenvolvedores</li> </a>
-                <li>Cadastro</li> 
-                <Button> <a href=""> Log in</Button> </a>
-            </ul>            
-        </nav>        
-    </header>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="src/style/style.css">
+        <link rel="stylesheet" href="src/style/header.css">
+        <title>Padawan Tech</title>
+    </head>
 
     <body>
-        <h4>Nível do perfil</h4>
-        <div>
-            <h1>Cadastro DEV</h1>
-            <h4>Preencha suas informações</h4>
-            <br>
-            <img src="/src/img/avatar_padrao.png" alt="foto de perfil padrao">
-        </div>
-        <br>
-        <form>
-            <div class="imput-group">
-                <div class="imput-box">
-                    <label for="nome">Nome</label>
-                    <p><input id="nome" type="text" name="nome" placeholder="Digite seu nome completo" required></div><p>
-                </div>
-            </div>
-            <p><strong>Sobre Você</strong></p>
-            <div class="imput-group">
-                <div class="imput-box">
-                    <label for="biografia">Biografia</label>
-                    <p><textarea row="6" style="width: 26em" id=biografia name="biografia" placeholder="Escreva seus interesses, sobre sua carreira, suas experiências..."></textarea></p>
-                
-                </div>
-            </div>
-            <div class="imput-group">
-                <div class="imput-box">
-                    <label for="data_de_nascimento">Data de Nascimento</label>
-                    <p><input id="data_de_nascimento" type="number" name="data_de_nascimento" placeholder="01/01/1999" required></div><p>
-                </div>
-            </div>
-            <div class="imput-group">
-                <div class="imput-box">
-                    <label for="email">E-mail</label>
-                    <p><input id="email" type="email" name="email" required></div><p>
-                </div>
-            </div>
-            <div class="imput-group">
-                <div class="imput-box">
-                    <label for="celular">Celular</label>
-                    <p><input id="celular" type="number" name="celular" placeholder="(XX) XXXXX-XXXX" required></div><p>
-                </div>
-            </div>
-            <div class="imput-group">
-                <div class="imput-box">
-                    <label for="ocupacao">Ocupação</label>
-                    <p><input id="ocupacao" type="text" name="ocupacao" required></div><p>
-                </div>
-            </div>
-            <div class="imput-group">
-                <div class="imput-box">
-                    <label for="empresa">Empresa</label>
-                    <p><input id="empresa" type="text" name="empresa" required></div><p>
-                </div>
-            </div>
-            <div class="imput-group">
-                <div class="imput-box">
-                    <label for="cargo">Cargo</label>
-                    <p><input id="cargo" type="text" name="cargo" required></div><p>
-                </div>
-            </div>
-        </div>
-        <div class="imput-group">
-            <div class="imput-box">
-                <p><input id="oportunidades" type="radio" name="oportunidades" required> <label for="oportunidades">Aberto a novas oportunidades</label></div><p>
-            </div>
-        </div>
-            <div>
-                <label>De qual lado da aplicação você desenvolve?</label>
-                <label>
-                    <p><input type="radio" name="devweb" value="frontend"> Front-end</p>
-                </label>
-                <label>
-                    <p><input type="radio" name="devweb" value="backend"> Back-end</p>
-                </label>
-                <label>
-                    <p><input type="radio" name="devweb" value="fullstack"> FullStack</p>
-                </label>
-            <div>
-                <label>Senioridade</label>
-                <select id="senioridade">
-                    <option selected disabled value="">Selecione</option>
-                    <option>Junior</option>
-                    <option>Pleno</option>
-                    <option>Sênior</option>
-                </select>
-            </div>
-            <br>
-            <fieldset>
-                <div>
-                    <label>Selecione as tecnologias que utiliza:</label><br><br>
-                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
-                    <label for="tecnologia1"></label>HTML</label>
-                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
-                    <label for="tecnologia2"></label>CSS</label>
-                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="javascript">
-                    <label for="tecnologia3"></label>JavaScript</label>
-                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
-                    <label for="tecnologia4"></label>PHP</label>
-                    <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
-                    <label for="tecnologia5"></label>C#</label>
-                    <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
-                    <label for="tecnologia6"></label>Python</label>
-                    <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
-                    <label for="tecnologia7"></label>Java</label>
-                </div>
-            </fieldset>
-            <p><strong>Suas Redes</strong></p>
-            <div class="imput-group">
-                <div class="imput-box">
-                    <label for="linkedin">Linkedin</label>
-                    <p><input id="linkedin" type="text" name="linkedin" required></div><p>
-                </div>
-            </div>
-            <div class="imput-group">
-                <div class="imput-box">
-                    <label for="twitter">Twitter</label>
-                    <p><input id="twitter" type="text" name="twitter" required></div><p>
-                </div>
-            </div>
-            <div>
-            <p><strong>Formação Acadêmica</strong></p>
-            <div class="imput-group">
-                <div class="imput-box">
-                    <label for="curso">Curso</label>
-                    <p><input id="curso" type="text" name="curso" required></div><p>
-                </div>
-            </div>
-            <div class="imput-group">
-                <div class="imput-box">
-                    <label for="instituicao">Instituição</label>
-                    <p><input id="instituicao" type="text" name="instituicao" required></div><p>
-                </div>
-            </div>
-            <div class="imput-group">
-                <div class="imput-box">
-                    <label for="tipo">Tipo</label>
-                    <p><input id="tipo" type="text" name="tipo" required></div><p>
-                </div>
-            </div>
-            <div class="gender_imputs">
-                <div class="gender_tittle">
-                    <p><input id="concluido" type="radio" name="concluido" required> <label for="concluido">Concluído</label></div><p>
-                </div>
-            </div>
-            <button type="submit">Cadastrar</button>
-        </form>
-        <footer>
-            <section>
-            <h2>INFORMAÇÕES</h2>
-            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ex laboriosam nemo libero asperiores delectus magnam? Recusandae nisi quasi quod sunt! Inventore optio itaque possimus aperiam eveniet commodi fuga dolore!</P>
-            <ul>
-                <li>Facebook</li>
-                <li>Twitter</li>
-                <li>Instagram</li>
-                <li>LinkedIn</li>            
-            </ul>
-            <h2>NAVEGAÇÃO</h2>
-                <ul>
-                    <li> <a href=""> Homepage</li> </a>
-                    <li> <a href=""> Sobre Nós</li> </a>                
-                    <li> <a href=""> Desenvolvedores</li> </a>
-                    <li> <a href=""> Projetos</li> </a>                
-                </ul> 
-            <h2>CONTATOS</h2>
-                <ul>
-                    <address>Rua das Estrelas, 99</address>
-                    <div>hello@padawantech.com</div>
-                    <div>Email Adress: <input type="email" name="" id=""> </div>
-                    <button type="submit">SUBSCRIBE</button>                
-                </ul>
-    
-            </section>
-        </footer>
-    </body>
-</html>
+        <header>
 
+            <img src="src/img/logo.svg" alt="logo padawan Tech">
+
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
+                <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
+                <li id="cad"><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+
+            <div class="header-btn">
+                <a class="cadastro" href="pag_cadastro.html">Cadastro</a>
+                <a class="in" href="login.html">Log In</a>
+                <div class="menu-mobile">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+
+        </header>
+
+        <body>
+            <h4>Nível do perfil</h4>
+            <div>
+                <h1>Cadastro DEV</h1>
+                <h4>Preencha suas informações</h4>
+                <br>
+                <img src="/src/img/avatar_padrao.png" alt="foto de perfil padrao">
+            </div>
+            <br>
+            <form>
+                <div class="imput-group">
+                    <div class="imput-box">
+                        <label for="nome">Nome</label>
+                        <p><input id="nome" type="text" name="nome" placeholder="Digite seu nome completo" required>
+                    </div>
+                    <p>
+                </div>
+                </div>
+                <p><strong>Sobre Você</strong></p>
+                <div class="imput-group">
+                    <div class="imput-box">
+                        <label for="biografia">Biografia</label>
+                        <p><textarea row="6" style="width: 26em" id=biografia name="biografia"
+                                placeholder="Escreva seus interesses, sobre sua carreira, suas experiências..."></textarea>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="imput-group">
+                    <div class="imput-box">
+                        <label for="data_de_nascimento">Data de Nascimento</label>
+                        <p><input id="data_de_nascimento" type="number" name="data_de_nascimento"
+                                placeholder="01/01/1999" required>
+                    </div>
+                    <p>
+                </div>
+                </div>
+                <div class="imput-group">
+                    <div class="imput-box">
+                        <label for="email">E-mail</label>
+                        <p><input id="email" type="email" name="email" required>
+                    </div>
+                    <p>
+                </div>
+                </div>
+                <div class="imput-group">
+                    <div class="imput-box">
+                        <label for="celular">Celular</label>
+                        <p><input id="celular" type="number" name="celular" placeholder="(XX) XXXXX-XXXX" required>
+                    </div>
+                    <p>
+                </div>
+                </div>
+                <div class="imput-group">
+                    <div class="imput-box">
+                        <label for="ocupacao">Ocupação</label>
+                        <p><input id="ocupacao" type="text" name="ocupacao" required>
+                    </div>
+                    <p>
+                </div>
+                </div>
+                <div class="imput-group">
+                    <div class="imput-box">
+                        <label for="empresa">Empresa</label>
+                        <p><input id="empresa" type="text" name="empresa" required>
+                    </div>
+                    <p>
+                </div>
+                </div>
+                <div class="imput-group">
+                    <div class="imput-box">
+                        <label for="cargo">Cargo</label>
+                        <p><input id="cargo" type="text" name="cargo" required>
+                    </div>
+                    <p>
+                </div>
+                </div>
+                </div>
+                <div class="imput-group">
+                    <div class="imput-box">
+                        <p><input id="oportunidades" type="radio" name="oportunidades" required> <label
+                                for="oportunidades">Aberto a novas oportunidades</label>
+                    </div>
+                    <p>
+                </div>
+                </div>
+                <div>
+                    <label>De qual lado da aplicação você desenvolve?</label>
+                    <label>
+                        <p><input type="radio" name="devweb" value="frontend"> Front-end</p>
+                    </label>
+                    <label>
+                        <p><input type="radio" name="devweb" value="backend"> Back-end</p>
+                    </label>
+                    <label>
+                        <p><input type="radio" name="devweb" value="fullstack"> FullStack</p>
+                    </label>
+                    <div>
+                        <label>Senioridade</label>
+                        <select id="senioridade">
+                            <option selected disabled value="">Selecione</option>
+                            <option>Junior</option>
+                            <option>Pleno</option>
+                            <option>Sênior</option>
+                        </select>
+                    </div>
+                    <br>
+                    <fieldset>
+                        <div>
+                            <label>Selecione as tecnologias que utiliza:</label><br><br>
+                            <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                            <label for="tecnologia1"></label>HTML</label>
+                            <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                            <label for="tecnologia2"></label>CSS</label>
+                            <input type="checkbox" id="tecnologia3" name="tecnologia3" value="javascript">
+                            <label for="tecnologia3"></label>JavaScript</label>
+                            <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                            <label for="tecnologia4"></label>PHP</label>
+                            <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                            <label for="tecnologia5"></label>C#</label>
+                            <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                            <label for="tecnologia6"></label>Python</label>
+                            <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                            <label for="tecnologia7"></label>Java</label>
+                        </div>
+                    </fieldset>
+                    <p><strong>Suas Redes</strong></p>
+                    <div class="imput-group">
+                        <div class="imput-box">
+                            <label for="linkedin">Linkedin</label>
+                            <p><input id="linkedin" type="text" name="linkedin" required>
+                        </div>
+                        <p>
+                    </div>
+                </div>
+                <div class="imput-group">
+                    <div class="imput-box">
+                        <label for="twitter">Twitter</label>
+                        <p><input id="twitter" type="text" name="twitter" required>
+                    </div>
+                    <p>
+                </div>
+                </div>
+                <div>
+                    <p><strong>Formação Acadêmica</strong></p>
+                    <div class="imput-group">
+                        <div class="imput-box">
+                            <label for="curso">Curso</label>
+                            <p><input id="curso" type="text" name="curso" required>
+                        </div>
+                        <p>
+                    </div>
+                </div>
+                <div class="imput-group">
+                    <div class="imput-box">
+                        <label for="instituicao">Instituição</label>
+                        <p><input id="instituicao" type="text" name="instituicao" required>
+                    </div>
+                    <p>
+                </div>
+                </div>
+                <div class="imput-group">
+                    <div class="imput-box">
+                        <label for="tipo">Tipo</label>
+                        <p><input id="tipo" type="text" name="tipo" required>
+                    </div>
+                    <p>
+                </div>
+                </div>
+                <div class="gender_imputs">
+                    <div class="gender_tittle">
+                        <p><input id="concluido" type="radio" name="concluido" required> <label
+                                for="concluido">Concluído</label>
+                    </div>
+                    <p>
+                </div>
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <footer>
+                <section>
+                    <h2>INFORMAÇÕES</h2>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ex laboriosam nemo libero
+                        asperiores delectus magnam? Recusandae nisi quasi quod sunt! Inventore optio itaque possimus
+                        aperiam eveniet commodi fuga dolore!</P>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>LinkedIn</li>
+                    </ul>
+                    <h2>NAVEGAÇÃO</h2>
+                    <ul>
+                        <li> <a href=""> Homepage</li> </a>
+                        <li> <a href=""> Sobre Nós</li> </a>
+                        <li> <a href=""> Desenvolvedores</li> </a>
+                        <li> <a href=""> Projetos</li> </a>
+                    </ul>
+                    <h2>CONTATOS</h2>
+                    <ul>
+                        <address>Rua das Estrelas, 99</address>
+                        <div>hello@padawantech.com</div>
+                        <div>Email Adress: <input type="email" name="" id=""> </div>
+                        <button type="submit">SUBSCRIBE</button>
+                    </ul>
+
+                </section>
+            </footer>
+        </body>
+
+    </html>

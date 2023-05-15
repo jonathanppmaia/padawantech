@@ -1,0 +1,83 @@
+main{
+    height: 100vh;
+}
+.login {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.containerLogin {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.containerLogin01 {
+    display: flex;
+    width: 50%;
+    height: 92vh;
+  
+    align-items: center;
+    justify-content: center;
+}
+
+.containerLogin02 {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.containerLogin02 form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.containerLogin02 form h2 {
+   color: #FFDD00;
+   margin-bottom: 10px;
+   font-size: 18px;
+}
+
+.containerLogin02 form input {
+    width: 400px;
+    padding: 10px;
+    color: #000;
+    font-size: 18x;
+    font-weight: 500;
+}
+
+#button_align {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.containerLogin02 form button {
+    display: flex;
+    width: 200px;
+    padding: 10px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #FFDD00;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.login_02{
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
