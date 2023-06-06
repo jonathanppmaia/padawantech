@@ -53,19 +53,21 @@
                     <br>
                     <!-- <img src="/src/img/avatar_padrao.png" alt="foto de perfil padrao"> -->
                 </div>
-                <form >
+                <form id="form">
                     <fieldset class="grupo">
                     
                         <div class="input-group">
                             <div class="input-box">
                                 <label for="nome">Nome</label>
-                                <p><input id="nome" type="text" name="nome" placeholder="Digite seu nome completo" required></div><p>
+                                <p><input id="nome" type="text" name="nome" placeholder="Digite seu nome completo" required class="inputs required" oninput="nameValidate()"></div><p>
+                                    <!-- <span class="span-required">Nome deve ter no minímo 3 caracteres</span> -->
                             </div>
                         </div>
                         <div class="input-group">
                             <div class="input-box">
                                 <label for="email">E-mail</label>
-                                <p><input id="email" type="email" name="email" required></div><p>
+                                <p><input id="email" type="email" name="email" required class="inputs required" oninput="emailValidate()"></div><p>
+                                    <!-- <span class="span-required">Digite um e-mail valido</span> -->
                             </div>
                         </div>
                     </fieldset>
@@ -81,14 +83,16 @@
                         <div class="input-group">
                             <div class="input-box">
                                 <label for="data_de_nascimento">Data de Nascimento</label>
-                                <p><input id="data_de_nascimento" type="number" name="data_de_nascimento" placeholder="01/01/1999" required></div><p>
+                                <p><input id="data_de_nascimento" type="number" name="data_de_nascimento" placeholder="01/01/1999" required class="inputs required"></div><p>
+                                    <!-- <span class="span-required">A data de nascimento não pode ser igual ou maior que a data atual</span> -->
                             </div>
                         </div>
                         
                         <div class="input-group">
                             <div class="input-box">
                                 <label for="celular">Celular</label>
-                                <p><input id="celular" type="number" name="celular" placeholder="(XX) XXXXX-XXXX" required></div><p>
+                                <p><input id="celular" type="number" name="celular" placeholder="(XX) XXXXX-XXXX" required class="inputs required"></div><p>
+                                    <!-- <span class="span-required">O número de celular deve conter 11 dígitos com o DDD</span> -->
                             </div>
                         </div>
                     </fieldset>
@@ -96,13 +100,15 @@
                         <div class="input-group">
                             <div class="input-box">
                                 <label for="ocupacao">Ocupação</label>
-                                <p><input id="ocupacao" type="text" name="ocupacao" required></div><p>
+                                <p><input id="ocupacao" type="text" name="ocupacao" required class="inputs required"></div><p>
+                                    <!-- <span class="span-required">Nome deve ter no minímo 5 caracteres</span> -->
                             </div>
                         </div>
                         <div class="input-group">
                             <div class="input-box">
                                 <label for="empresa">Empresa</label>
-                                <p><input id="empresa" type="text" name="empresa" required></div><p>
+                                <p><input id="empresa" type="text" name="empresa" required class="inputs required"></div><p>
+                                    <!-- <span class="span-required">Nome deve ter no minímo 3 caracteres</span> -->
                             </div>
                         </div>
                     </fieldset>
@@ -110,13 +116,14 @@
                         <div class="input-group">
                             <div class="input-box">
                                 <label for="cargo">Cargo</label>
-                                <p><input id="cargo" type="text" name="cargo" required></div><p>
+                                <p><input id="cargo" type="text" name="cargo" required class="inputs required"></div><p>
+                                    <!-- <span class="span-required">Nome deve ter no minímo 2 caracteres</span> -->
                             </div>
                         </div>
                     
                         <div class="input-group">
                             <div class="input-box">
-                                <p><input id="oportunidades" type="radio" name="oportunidades" required> <label for="oportunidades">Aberto a novas oportunidades</label></div><p>
+                                <p><input id="oportunidades" type="radio" name="oportunidades" required class="inputs required"> <label for="oportunidades">Aberto a novas oportunidades</label></div><p>
                             </div>
                         </div>
                     </fieldset>
@@ -169,7 +176,8 @@
                         <div class="input-group">
                             <div class="input-box">
                                 <label for="linkedin">Linkedin</label>
-                                <p><input id="linkedin" type="text" name="linkedin" required></div><p>
+                                <p><input id="linkedin" type="text" name="linkedin" required class="inputs required"></div><p>
+                                    <!-- <span class="span-required">Um link deve ser inserido</span> -->
                             </div>
                         </div>
                         <div class="input-group">
@@ -185,13 +193,15 @@
                         <div class="input-group">
                             <div class="input-box">
                                 <label for="curso">Curso</label>
-                                <p><input id="curso" type="text" name="curso" required></div><p>
+                                <p><input id="curso" type="text" name="curso" required class="inputs required"></div><p>
+                                    <!-- <span class="span-required">Nome deve ter no minímo 5 caracteres</span> -->
                             </div>
                         </div>
                         <div class="input-group">
                             <div class="input-box">
                                 <label for="instituicao">Instituição</label>
-                                <p><input id="instituicao" type="text" name="instituicao" required></div><p>
+                                <p><input id="instituicao" type="text" name="instituicao" required class="inputs required"></div><p>
+                                    <!-- <span class="span-required">Nome deve ter no minímo 3 caracteres</span> -->
                             </div>
                         </div>
                         <div class="input-group">
@@ -273,5 +283,46 @@
                 </section>
             </footer>    
     </body>
+    <script>
+        const form = document.getElementById('form');
+        const campos = document.querySelectorAll('.required');
+        const spans = document.querySelectorAll('.span-required');
+        const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0 -9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+        function setError(index){
+            campos[index].style.border = '2px solid #e63636';
+            spans[index].style.display = 'block';
+            
+        }
+        
+        function removeError(index){
+            campos[index].style.border = '';
+            spans[index].style.display = 'none';
+        }
+
+        function nameValidate(){
+            if(campos[0].value.length < 3)
+            {
+                setError(0);
+            }
+            else
+            {
+                removeError(0);
+            }
+            
+        }
+
+        function emailValidate(){
+            if(!emailRegex.test(campos[1].value))
+            {
+                setError(1);
+            }
+            else
+            {
+                removeError(1);
+            }
+        }
+
+    </script>
 </html>
 
