@@ -49,7 +49,7 @@
                     <form>
                         <label>
                             <h2>Usuário</h2>
-                            <input type="text" class="input_text" name="Usuário" id="name" />
+                            <input type="text" class="input_text" name="Usuário" id="name" required class="inputs required" oninput="emailValidate()" />
 
                         </label>
 
@@ -82,5 +82,46 @@
     </script>
     <script src="src/js/accordion.js"></script>
 </body>
+
+<script>
+    const form = document.getElementById('form');
+    const campos = document.querySelectorAll('.required');
+    const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0 -9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    function setError(index){
+        campos[index].style.border = '2px solid #e63636';
+        spans[index].style.display = 'block';
+            
+    }
+        
+    function removeError(index){
+        campos[index].style.border = '';
+        spans[index].style.display = 'none';
+    }
+    
+    function emailValidate(){
+        if(!emailRegex.test(campos[0].value))
+        {
+            setError(0);
+        }
+        else
+        {
+            removeError(0);
+        }
+    }
+
+    function mainPasswordValidate(){
+        if(campos[1].value.length < 8)
+        {
+            setError(1);
+        }
+        else
+        {
+            removeError(1);
+
+        }
+    }
+
+</script>
 
 </html>
