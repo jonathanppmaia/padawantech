@@ -73,6 +73,7 @@ ___
 * Uso do Discord para comunicação da equipe.
 
 ##### Ao final da Sprint:
+
 * Projeto com os componentes básicos de um site:
 * Header;
 * Barra de navegação;
@@ -83,3 +84,7 @@ ___
 Entrega em 12.04.2023
 
 ___
+
+### Sprint - 05 Banco de Dados
+
+Entrega da Sprint: https://docs.google.com/document/d/1uZGjGQyzUGWFYCXCRF_TkQEbEw10u96xcotRsLzDE-M/edit?usp=sharing
