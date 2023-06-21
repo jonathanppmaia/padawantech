@@ -16,26 +16,15 @@
     <header>
         <img src="/src/img/logo.svg" alt="logo padawan Tech">  
             <ul class="navbar">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="sobre.html">Sobre nós</a>
-                </li>
-                <li>
-                    <a href="parceiros.html">Parceiros</a>
-                </li>
-                <li>
-                    <a href="desenvolvedores.html">Desenvolvedores</a>
-                </li>
-                <li id="cad">
-                    <a href="cadastro.html">Cadastro</a>
-                </li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pagina_sobre_nos/pag_sobre_nos.html">Sobre nós</a></li>
+                <li><a href="https://ramosfilho.files.wordpress.com/2017/09/site-fora-do-ar.jpg">Parceiros</a></li>
+                <li><a href="/pagina_desenvolvedores/index.html">Desenvolvedores</a></li>                
             </ul>
 
         <div class="header-btn">
-          <a class="cadastro" href="#">Cadastro</a>
-          <a class="in" href="#">Log In</a>
+          <a class="cadastro" href="/pagina_cadastro/pagina_cadastro.html">Cadastro</a>
+          <a class="in" href="/login.html">Log In</a>
           <div class="menu-mobile">
             <div></div>
             <div></div>
@@ -52,7 +41,7 @@
             </div>
         <section>
             <article class="box-valor"></article>
-            <br>           
+            <br>       
                   
                   
         </section>    
@@ -91,59 +80,48 @@
             </div>            
     </main>
     <footer>
-        <section class="container-footer">
-            <div>
-                <img id="pedemage" src="/src/img/logo.svg" alt="logo padawan Tech">
-                <div class="informacoes">
-                    <h2>INFORMAÇÕES</h2><br>                    
-                    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ex laboriosam nemo libero asperiores delectus magnam?</P><br>                    
-                        <ul id="redesociais">
-                            <a href="https://pt-br.facebook.com/" target="_blank" class="social-img">
-                                <img src="/pagina_sobre_nos/src/img/facebook_original_logo_icon_146526.png" alt=""></a>
-                            <a href="https://twitter.com/" target="_blank" class="social-img">
-                                <img src="/pagina_sobre_nos/src/img/Twitter_icon-icons.com_66803.png" alt=""></a>
-                            <a href="https://www.instagram.com/" target="_blank" class="social-img">
-                                <img src="/pagina_sobre_nos/src/img/instagram-icone-logo.png" alt=""></a>
-                            <a href="https://www.linkedin.com/" target="_blank" class="social-img">
-                                <img src="/pagina_sobre_nos/src/img/linkedin.png" alt=""></a>            
-                        </ul>
-                </div>
-            </div>            
-                <div class="navegacao">
-                    <h2>NAVEGAÇÃO</h2>
-                        <ul><br>                            
-                            <li> <a href="/index.html">
-                                Homepage
-                            </li></a>
-                            <li> <a href="/pagina_sobre_nos/pag_sobre_nos.html">
-                                Sobre Nós
-                            </li> </a>                
-                            <li> <a href="#">
-                                Desenvolvedores
-                            </li> </a>
-                            <li> <a href="#">
-                                Projetos
-                            </li> </a>    
-                        </ul>                         
-                </div>
-                <div class="contatos">
-                    <h2>CONTATOS</h2><br>
-                        <ul>                                               
-                            <address>
-                                Rua das Estrelas, 99
-                            </address>
-                            <p>
-                                hello@padawantech.com
-                            </p><br>
-                            <p>
-                                Email Adress: <input type="email" name="" id="">
-                            </p>
-                            <button id="botao" type="submit">
-                                SUBSCRIBE
-                            </button>                
-                        </ul>
-                </div>
-        </section>
+        <img  id="logop" src="/src/img/logo_01.svg" alt="logo">  
+        <div class="containerFooter">
+          
+          <div class="footer01">
+            
+            <h2>INFORMAÇÕES</h2>
+            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</P>
+            <div class="social">
+              <a href="#"> <img src="/src/img/facebook.svg" alt="facebook"></a>
+              <a href="#"><img src="/src/img/twitter.svg" alt="twitter"></a>
+              <a href="#"><img src="/src/img/instagram.svg" alt="instagram"></a>
+              <a href="#"><img src="/src/img/linkedin.svg" alt="linkedin"></a>
+            </div>
+          </div>
+          <div class="footer02">
+            <h2>NAVEGAÇÃO</h2>
+            <div class="textnav">
+              <a style="color: #ffffff;"href="#">Homepage</a>
+              <a style="color: #ffffff;"href="#@">Sobre nós</a>
+              <a style="color: #ffffff;"href="#">Desenvolvedores</a>
+              <a style="color: #ffffff;"href="#">Projetos</a>
+            </div>
+          </div>
+          <div class="footer03">
+            <h2>CONTATOS</h2>
+            <div id="location">
+              <img src="/src/img/location.svg" alt="location">
+              <p>Rua das EStrelas nº 99</p>
+            </div>
+            <div id="email">
+              <img src="/src/img/email.svg" alt="location">
+              <p>hello@padawanrtech.com</p>
+            </div>
+            <div class="formulario">
+              <form>
+                <textarea name="message" rows="1" cols="30" placeholder="Digite seu email aqui."></textarea>
+                <br><br>
+                <button type="button">Newsletter </button>
+              </form>
+            </div>
+          </div>
+        </div>        
     </footer>    
 </body>
 </html>
